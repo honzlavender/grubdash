@@ -160,39 +160,3 @@ module.exports = {
 }
 /*
 In the src/orders/orders.controller.js file, add handlers and middleware functions to create, read, update, delete, and list orders.
-
-
-
-//if deliver to is missing or empty
-function hasDeliverTo(req, res, next) {
-    const { deliverTo } = req.body.data;
-    if (deliverTo) {
-        return next()
-    } next ({
-        status: 400,
-        message: "Order must include deliverTo"
-    })
-}
-
-//if mobileNumber to is missing or empty
-function hasNumber(req, res, next) {
-    const { mobileNumber } = req.body.data;
-    if (mobileNumber) {
-        return next()
-    } next ({
-        status: 400,
-        message: "Order must include mobileNumber"
-    })
-}
-
-//if dishes to is missing or empty
-function hasDishes(req, res, next) {
-    const { dishes } = req.body.data;
-    if (dishes) {
-        return next()
-    } next ({
-        status: 400,
-        message: "Order must include dishes"
-    })
-}
-*/
