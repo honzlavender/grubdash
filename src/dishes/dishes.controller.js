@@ -117,15 +117,6 @@ function idMatch(req, res, next) {
   next();
 }
 
-//UPDATE
-//function update(req, res) {
-//  const dishId = req.params.dishId;
-//  const updateDish = res.locals.dish;
-//  if (!updateDish.id) {
-//    updateDish.id = dishId;
-//  }
-//  res.json({ data: updateDish });
-//}
 
 function update(req, res) {
     const dish = res.locals.dish;
